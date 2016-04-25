@@ -54,13 +54,13 @@ map.on('click', function(){
   $('#info').empty();
                                  
                                  })
-var myLocation+ L.mapbox.featureLayer();
-myLocation.addTo(mao);
+var myLocation= L.mapbox.featureLayer();
+myLocation.addTo(map);
 map.on('locationfound',function(e){
   myLocation.setGeoJSON({
     type:'Feature',
     geometry:{
-    type: 'Point'
+    type: 'Point',
     coordinates:[e.latlng.lng,e.latlng.lat]
   },
                         properties:{
