@@ -65,7 +65,7 @@ map.on('locationfound',function(e){
   },
                         properties:{
                         title: 'Here I am !',
-                        "marker-color":#ff8888'
+                        "marker-color":'#ff8888',
                         "marker-symbol":'star'
                         }
                         })
