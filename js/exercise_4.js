@@ -35,7 +35,7 @@ featureLayer.on('ready',function() {
 var clickHandler = function(e){
   $('#info').empty();
   var feature=e.target.feature;
-  $('info').fadeIn(400,function(){
+  $('#info').fadeIn(400,function(){
     var info='';
     info+='<div>',
     info+= '<h2>' + feature.properties.LABEL +'</h2>';
