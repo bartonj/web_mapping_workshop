@@ -70,5 +70,5 @@ map.on('locationfound',function(e){
                         }
                         })
 })
-map.locate({setView;true});
+map.locate({setView:true});
     
