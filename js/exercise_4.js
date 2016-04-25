@@ -40,7 +40,7 @@ var clickHandler = function(e){
     var info='';
     info+='<div>',
     info+= '<h2>' + feature.properties.LABEL +'</h2>';
-    info+= '<h2>'+features.properties.LOCATION+'</p>';
+    info+= '<p>'+features.properties.LOCATION+'</p>';
     info+='/div>';
     $('#info').append(info);
 })
@@ -54,7 +54,4 @@ map.on('click', function(){
   $('#info').fadOut(200);
   $('#info').empty();
                                  
-                                 
-                                 
-  
-})
+                                 })
