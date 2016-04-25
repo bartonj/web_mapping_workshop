@@ -23,7 +23,7 @@ var featureLayer = L.mapbox.featureLayer()
     .loadURL(dataFileToAdd)
     .addTo(map);
 
-featureLayer.on('ready', function() {
+featureLayer.on('ready',function() {
     this.setStyle({
         "color": "#6583BF",
         "fillColor": "#6583BF",
@@ -39,7 +39,7 @@ var clickHandler = function(e){
     var info='';
     info+='<div>',
     info+= '<h2>' + feature.properties.LABEL +'</h2>';
-    info+= '<p>'+features.properties.LOCATION+'</p>';
+    info+= '<p>'+feature.properties.LOCATION+'</p>';
     info+='/div>';
     $('#info').append(info);
 })
