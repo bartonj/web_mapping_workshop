@@ -35,8 +35,7 @@ featureLayer.on('ready', function() {
 
 featureLayer.on('ready' function(){
   this.eachLayer(function(layer){
- 	 layer.bindPopup('welcome to '+
- 	 layer.feature.properties.LABEL);
+ 	 layer.bindPopup('welcome to '+ layer.feature.properties.LABEL);
  		 })
 })
   
