@@ -37,16 +37,17 @@ var clickHandler = function(e){
   $('#info').empty();
   var feature=e.target.feature:
   $('info").fadeIn(400,function(){
-    varinfo='';
-    info+='<div>'
-    info+= '<2>' + feature.properties.LABEL +'</h2>';
-    info+= '<p>'= features.properties.LOCATION+'</p>';
+    var info='';
+    info+='<div>',
+    info+= '<h2>' + feature.properties.LABEL +'</h2>';
+    info+= '<h2>'+features.properties.LOCATION+'</p>';
     info+='/div>';
-    $('#info').append(info):
+    $('#info').append(info);
 })
 }
 featureLayer.on('ready' , function(){
-  this.eachLayer(function(layer){layer.on('click', clickHandler);
+  this.eachLayer(function(layer){
+    layer.on('click', clickHandler);
                                 })
 })
 map.on('click', function(){
@@ -56,4 +57,4 @@ map.on('click', function(){
                                  
                                  
   
-}
+})
